@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<title>ToDoList</title>
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<!-- Semantic-ui CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.6/semantic.min.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+	<div class="ui grid">
+		<div class="ui six wide column">
+			<h1 class="ui dividing header">TODOLIST</h1>
+			<div id="main" class="ui two cards"></div>
+		</div>
+	</div>
+
+	<br>
+	<br>
+
+	<div class="ui input focus">
+		<input type="text" id="newInput" placeholder="Entrer une tâche à faire">
+	</div>
+	
+	<button class="ui secondary button" onclick="newElement()">Okay</button>
+	<button class="ui button">Cancel</button>
+
+	<br>
+	<br>
+
+	<table class="ui celled table">
+		<thead>
+			<tr>
+				<th>TACHES A FAIRE</th>
+				<th>TACHES EFFECTUEES</th>
+			</tr>
+		</thead>
+		<tbody div="tbody">
+			<tr>
+				<td><div id="todo"></div><button class="mini ui button">
+					Faite!
+				</button></td>
+				<td><div id="done"></div></td>
+			</tr>
+		</tbody>
+	</table>
+
+
+	<script src="js/todo.js"></script>
+</body>
+
+</html>
+
+
